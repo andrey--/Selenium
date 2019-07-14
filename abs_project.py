@@ -16,7 +16,9 @@ def method_name(url):
     time.sleep(1)
     welcome_text_elt = browser.find_element_by_tag_name("h1")
     welcome_text = welcome_text_elt.text
+    browser.quit()
     return welcome_text
+
 
 class TestAbs(unittest.TestCase):
 
